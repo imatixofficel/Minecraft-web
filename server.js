@@ -51,10 +51,15 @@ app.get('/config.json', (req, res, next) => {
   try {
     publicConfig = require('./public/config.json')
   } catch { }
+  // LAN / local multiplayer (scripts/lan.mjs): add a one-click entry for the local Minecraft server
+  const localServer = process.env.LOCAL_MC_SERVER
+    ? { promoteServers: [{ ip: process.env.LOCAL_MC_SERVER, name: 'Local server (LAN)', description: 'Matix local server' }, ...(config.promoteServers ?? [])] }
+    : {}
   res.json({
     ...config,
     'defaultProxy': '', // use current url (this server)
     ...publicConfig,
+    ...localServer,
   })
 })
 if (isProd) {

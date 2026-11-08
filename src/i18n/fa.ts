@@ -202,6 +202,18 @@ export const fa: Record<string, string> = {
   'Voice Master Volume': 'صدای اصلی چت صوتی',
   Plugins: 'افزونه‌ها',
 
+  // Servers / multiplayer (Matix)
+  'Address like play.example.com:25565 (wss:// servers need no proxy)': 'آدرس سرور را مثل play.example.com:25565 بنویسید. اعداد فارسی هم قبول است. سرورهای wss:// بدون پروکسی وصل می‌شوند.',
+  'Connect to Server': 'اتصال به سرور',
+  'Not needed for websocket servers': 'برای سرورهای وب‌سوکت لازم نیست',
+  'Multiplayer': 'چندنفره',
+  'Local server (LAN)': 'سرور محلی (شبکه)',
+  'Matix local server': 'سرور محلی Matix',
+  'Multiplayer: Invite Friend': 'چندنفره: دعوت دوست (کپی لینک)',
+  'Multiplayer: Stop Sharing': 'چندنفره: توقف اشتراک',
+  'Multiplayer: Opening...': 'چندنفره: در حال آماده‌سازی...',
+  'Language: English (فارسی)': 'زبان: فارسی',
+
   // Loading / status
   'Loading...': 'در حال بارگذاری...',
   'Saving world': 'در حال ذخیره‌ی دنیا',

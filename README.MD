@@ -253,3 +253,13 @@ Only during development:
 - [ClassiCube](https://github.com/ClassiCube/ClassiCube) - Better C# rewrite [\[DEMO\]](https://www.classicube.net/server/play/?warned=true)
 - [Eaglercraft](https://webmc.xyz/) - Real Minecraft in the browser [\[DEMO\]](https://webmc.xyz/#/g/03b1c3b3-bd6a-4b17-ba94-eaf9330df3be)
 - [js-minecraft](https://github.com/LabyStudio/js-minecraft) - An insanely well-done clone from the graphical side that inspired many features here [\[DEMO\]](https://labystudio.github.io/js-minecraft/)
+
+---
+
+## Matix Minecraft (this fork)
+
+Created by Matix. Original version: https://github.com/zardoy/minecraft-web-client (MIT).
+
+- Persian (فارسی) UI with the Vazirmatn font, switch in main menu / Options → Language.
+- Local multiplayer: `pnpm build && pnpm start-lan` runs the game, the proxy and a real local Minecraft server on your PC. Everyone opens the printed address and picks **Local server (LAN)**.
+- GitHub Pages: `.github/workflows/pages.yml`.

@@ -1,3 +1,4 @@
+import { isMobile } from 'minecraft-renderer/src/lib/simpleUtils'
 import {
   RENDERER_DEFAULT_OPTIONS,
   RENDERER_OPTIONS_META
@@ -38,6 +39,8 @@ export const defaultOptions = {
   debugLogNotFrequentPackets: false,
   unimplementedContainers: false,
   ...RENDERER_DEFAULT_OPTIONS,
+  // phones/tablets: cheaper meshing & rendering so chunks appear faster (can be turned back on in Options)
+  ...(isMobile() ? { smoothLighting: false, starfieldRendering: false } : {}),
   enabledResourcepack: null as string | null,
   useVersionsTextures: 'latest',
   serverResourcePacks: 'prompt' as 'prompt' | 'always' | 'never',
