@@ -1,11 +1,12 @@
 {
   "name": "minecraft-web-client",
   "version": "0.0.0-dev",
-  "description": "A minecraft client running in a browser",
+  "description": "Matix Minecraft: ماینکرفت جاوا در مرورگر با رابط فارسی (fork of zardoy/minecraft-web-client)",
   "scripts": {
     "dev-rsbuild": "rsbuild dev",
     "dev-proxy": "node server.js",
     "p2p-relay": "node scripts/p2pRelayServer.mjs",
+    "start-lan": "node scripts/lan.mjs",
     "start": "run-p dev-proxy dev-rsbuild",
     "start2": "run-p dev-rsbuild",
     "build-worldgen-datapack": "minecraft-worldgen-pack generated/mc-worldgen-data.zip --vanilla",
